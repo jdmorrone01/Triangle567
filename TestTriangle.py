@@ -36,22 +36,22 @@ class TestTriangles(unittest.TestCase):
         self.assertEqual(classifyTriangle(50,50,50),'Equilateral','50,50,50 should be equilateral')
 
     def testScaleneTriangleA(self): 
-        self.assertEqual(classifyTriangle(2,2,1),'Scalene','2,2,1 should be scalene')
+        self.assertEqual(classifyTriangle(10,1,12),'Scalene','10,1,12 should be scalene')
 
     def testScaleneTriangleB(self): 
-        self.assertEqual(classifyTriangle(50,50,100),'Scalene','50,50,100 should be scalene')
+        self.assertEqual(classifyTriangle(8,4,10),'Scalene','8,4,10 should be scalene')
 
     def testOutofBoundsTriangleA(self): 
-        self.assertEqual(classifyTriangle(201,2,1),'InvalidInput')
+        self.assertEqual(classifyTriangle(201,2,1),'InvalidInput', '201,2,1 is not a valid imput)
 
     def testOutofBoundsTriangleB(self): 
-        self.assertEqual(classifyTriangle(-1,2,1),'InvalidInput')
+        self.assertEqual(classifyTriangle(-1,2,1),'InvalidInput','-1,2,1 is not a valid imput)
 
     def testIsocelesTriangleA(self):
-        self.assertEqual(classifyTriangle(10,1,12),'Isoceles','10,1,12 should be isoceles')
+        self.assertEqual(classifyTriangle(2,2,1),'Isoceles','2,2,1 should be isoceles')
 
     def testIsocelesTriangleB(self): 
-        self.assertEqual(classifyTriangle(8,4,10),'Isoceles','8,4,10 should be isoceles')
+        self.assertEqual(classifyTriangle(50,50,100),'Isoceles','50,50,100 should be isoceles')
     
 
 if __name__ == '__main__':
