@@ -42,10 +42,10 @@ class TestTriangles(unittest.TestCase):
         self.assertEqual(classifyTriangle(8,4,10),'Scalene','8,4,10 should be scalene')
 
     def testOutofBoundsTriangleA(self): 
-        self.assertEqual(classifyTriangle(201,2,1),'InvalidInput', '201,2,1 is not a valid imput)
+        self.assertEqual(classifyTriangle(201,2,1),'InvalidInput', '201,2,1 is not a valid imput')
 
     def testOutofBoundsTriangleB(self): 
-        self.assertEqual(classifyTriangle(-1,2,1),'InvalidInput','-1,2,1 is not a valid imput)
+        self.assertEqual(classifyTriangle(-1,2,1),'InvalidInput','-1,2,1 is not a valid imput')
 
     def testIsocelesTriangleA(self):
         self.assertEqual(classifyTriangle(2,2,1),'Isoceles','2,2,1 should be isoceles')
